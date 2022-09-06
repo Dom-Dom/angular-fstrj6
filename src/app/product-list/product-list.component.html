@@ -8,11 +8,13 @@
   </h3>
 
   <p *ngIf="product.description; else noDesc">
-    description : {{ product.description }}
+    Description : {{ product.description }}
   </p>
   <ng-template #noDesc>
-    Pas de description disponible pour ce produit
+    Description : No description available for this product
   </ng-template>
+
+  <button type="button" (click)="share()">Share</button>
 </div>
 
 <!-- 
